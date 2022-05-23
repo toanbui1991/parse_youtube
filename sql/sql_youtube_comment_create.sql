@@ -1,9 +1,9 @@
-create table youtube_comment(
-   id INT NOT NULL AUTO_INCREMENT,
-   target_link VARCHAR(256),
-   title VARCHAR(256),
-   user_id VARCHAR(256),
-   user_name VARCHAR(256),
-   comments Text,
-   PRIMARY KEY ( id )
-);
+CREATE TABLE `youtube_comment` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `target_link` varchar(256) DEFAULT NULL,
+  `title` varchar(256) DEFAULT NULL,
+  `user_id` varchar(256) DEFAULT NULL,
+  `user_name` varchar(256) DEFAULT NULL,
+  `comment` varchar(256) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='demo table to store youtube comments';
